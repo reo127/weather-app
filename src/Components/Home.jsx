@@ -1,8 +1,10 @@
 import React from 'react'
+import WeatherDetails from './WeatherDetails'
 
 const Home = () => {
   return (
-    <div className='flex justify-center'>
+   <>
+     <div className='flex justify-center'>
       <div className=" border-2 h-16 max-w-[50rem] justify-between flex items-center rounded-xl mt-4 ">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
           width="70" height="100"
@@ -13,6 +15,9 @@ const Home = () => {
         <button className='bg-violet-600 hover:bg-violet-700 px-7 py-3 font-semibold text-white text-lg  rounded-xl mr-1'>Search</button>
       </div>
     </div>
+
+    <WeatherDetails/>
+   </>
   )
 }
 
