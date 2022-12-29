@@ -1,12 +1,16 @@
 import Home from './Components/Home';
+import WeatherState from './context/weatherProvider';
 import './input.css'
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <WeatherState>
+        <Home />
+      </WeatherState>
     </div>
   );
 }

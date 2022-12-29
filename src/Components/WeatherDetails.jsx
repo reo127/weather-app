@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import WeateherContext from '../context/weatherContext'
 
 const WeatherDetails = () => {
+    const { city } = useContext(WeateherContext)
+    
     return (
         <>
-        <h1 className='text-center mt-4 lg:mt-12 font-semibold text-4xl'>West bengal</h1>
+            <h1 className='text-center mt-4 lg:mt-12 font-semibold text-4xl'>{city}</h1>
             <section className="p-6 my-6  text-gray-800">
                 <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
                     <div className="flex p-4 space-x-4 rounded-lg md:space-x-6 bg-gray-50 text-gray-800">
