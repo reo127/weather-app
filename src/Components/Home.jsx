@@ -3,7 +3,8 @@ import WeatherDetails from './WeatherDetails'
 
 const Home = ({getWeather, weatherData }) => {
   const [city, setCity] = useState('')
-
+  
+  
 
   return (
    <>

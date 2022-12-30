@@ -1,7 +1,8 @@
 
 
 const WeatherDetails = ({weatherData}) => {
-   console.log(weatherData.main?.temp)
+   
+console.log(weatherData);
     return (
         <>
             <h1 className='text-center mt-4 lg:mt-12 font-semibold text-4xl'>

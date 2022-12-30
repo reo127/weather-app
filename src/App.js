@@ -18,7 +18,12 @@ function App() {
      await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_API_KEY}`)
     .then((response) => response.json())
     .then((jsonData) =>setweatherData( jsonData ))
-    .catch( err => console.log(err))
+    .catch( err => console.log(err, "Error place"))
+
+    if(weatherData.message === "city not found"){
+      alert("Invalide city")
+      return;
+    }
   }
 
 
