@@ -1,12 +1,11 @@
-import React, { useContext } from 'react'
-import WeateherContext from '../context/WeatherContext'
+
 
 const WeatherDetails = ({weatherData}) => {
    console.log(weatherData.main?.temp)
     return (
         <>
             <h1 className='text-center mt-4 lg:mt-12 font-semibold text-4xl'>
-                {weatherData ? weatherData.name : ""}
+                {weatherData ? weatherData.name : ""} - {weatherData.main?.temp} temp
             </h1>
             <section className="p-6 my-6  text-gray-800">
                 <div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
