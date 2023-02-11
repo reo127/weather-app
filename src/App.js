@@ -15,7 +15,7 @@ function App() {
       alert('place enter city name');
       return;
     }
-     await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_API_KEY}`)
+     await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
     .then((response) => response.json())
     .then((jsonData) =>setweatherData( jsonData ))
     .catch( err => console.log(err, "Error place"))
